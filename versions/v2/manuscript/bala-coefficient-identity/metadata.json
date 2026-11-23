@@ -1,0 +1,15 @@
+{
+  "id": "oeis-a351858-bala-coefficient-identity",
+  "revision": 2,
+  "problem_ids": ["oeis-a351858-bala-coefficient-identity"],
+  "topic": "Peter Bala's finite-binomial coefficient conjecture and positive expansions for his rational-function family",
+  "title": "Positive expansions for Bala's trinomial coefficient conjecture and alternative proofs of the Bajaj–Burns obstructions",
+  "creators": [
+    {"name": "Ma, Haobo", "affiliation": "ChronoAI Pte Ltd, Singapore"},
+    {"name": "Zhang, Wenlin", "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore"}
+  ],
+  "abstract": "A finite binomial expansion proves Peter Bala's finite-sum conjecture (OEIS A351858, FORMULA, revision 2, 27 February 2022; retained in revision 31, 28 October 2025), extends to his rational-function family, and gives alternative proofs of the family obstructions of Ravi Bajaj and Alexander Burns (12 August 2026, Sections 2–3). We obtain a two-parameter coefficient identity and a positive finite formula for every member of the family, including A351859. We also derive the two entries' alternating sums, reversion formulas, algebraicity and ordinary Gauss congruences. The two infinite counterexample families have exact valuation two, distinguishing these ordinary congruences from the proposed cubic ones.",
+  "summary": "An elementary proof of Bala's trinomial finite-sum conjecture, a two-parameter extension, positive formulas for the entire rational-function family, proofs of the companion coefficient and generating-function formulas, and alternative proofs of the two Bajaj–Burns infinite obstruction families.",
+  "license": "cc-by-4.0",
+  "evidence_url": "https://github.com/the-omega-institute/trureturing/blob/4a7117cee792c7d5598d7f4770577d557fb45137/D5/S1/Recurrence/BalaTrinomialCoefficientIdentity.lean"
+}

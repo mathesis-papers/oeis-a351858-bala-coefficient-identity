@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "note_id": "oeis-a351858-bala-coefficient-identity",
+  "revision": 2,
+  "files": [
+    {
+      "name": "note.tex",
+      "sha256": "8cb9949af441b95a96d512cab04771de93d16f4ae83f631800da7de649be2647",
+      "bytes": 17625
+    },
+    {
+      "name": "README.md",
+      "sha256": "8dafa2eca82452664b7f10dd3e4a10062a58165ca15e6b3df4defb3fa7a08e46",
+      "bytes": 3769
+    },
+    {
+      "name": "metadata.json",
+      "sha256": "67e6f85822da38feb804cc5d84c78199fb3a9397e5d6651b8b4bf73b6694d893",
+      "bytes": 1837
+    },
+    {
+      "name": "verify.py",
+      "sha256": "76928776a918b38da80485253b7b827abf56d93acd4b28868d00366382424ba4",
+      "bytes": 9922
+    },
+    {
+      "name": "verification.json",
+      "sha256": "c4995b1c2db5c117de702907218497abb471fb8740a5b04cb7bc72413fd8ba40",
+      "bytes": 2038
+    },
+    {
+      "name": "reference-values.json",
+      "sha256": "bb46b3fdb35ff4d5fd13fac5cf71b9b52c5077c16cbc24b2ae9c603765081e22",
+      "bytes": 4875
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "status": "pass",
+  "arithmetic": "exact Python integers; formal series truncated at the extracted degree",
+  "two_parameter_identity": {
+    "m_inclusive": [
+      0,
+      40
+    ],
+    "n_inclusive": [
+      0,
+      40
+    ],
+    "cases": 1681
+  },
+  "A351858_identity": {
+    "n_inclusive": [
+      0,
+      100
+    ],
+    "cases": 101,
+    "first_six": [
+      1,
+      1,
+      7,
+      19,
+      103,
+      376
+    ]
+  },
+  "positive_family_formula": {
+    "k_inclusive": [
+      1,
+      8
+    ],
+    "n_inclusive": [
+      0,
+      25
+    ],
+    "cases": 208
+  },
+  "OEIS_reference_terms_matched": {
+    "A351858": 101,
+    "A351859": 26
+  },
+  "family_counterexamples": [
+    {
+      "k": 4,
+      "u_k_1": 1,
+      "u_k_5": 201,
+      "difference": 200,
+      "residue_mod_125": 75
+    },
+    {
+      "k": 5,
+      "u_k_1": 1,
+      "u_k_5": 151,
+      "difference": 150,
+      "residue_mod_125": 25
+    }
+  ],
+  "alternating_sums": {
+    "n_inclusive": [
+      0,
+      30
+    ],
+    "cases_per_sequence": 31
+  },
+  "reversion_and_algebraic_equation": {
+    "k_inclusive": [
+      1,
+      8
+    ],
+    "degree_inclusive": [
+      0,
+      12
+    ],
+    "cases": 104
+  },
+  "ordinary_Gauss_congruences": {
+    "k_inclusive": [
+      1,
+      6
+    ],
+    "coefficient_slopes": [
+      1,
+      2,
+      3
+    ],
+    "power_multipliers": [
+      -2,
+      -1,
+      0,
+      1,
+      2
+    ],
+    "primes": [
+      2,
+      3,
+      5,
+      7
+    ],
+    "levels": [
+      1,
+      2
+    ],
+    "n": 1,
+    "cases": 720
+  },
+  "infinite_obstruction_formulas": {
+    "primes_checked": [
+      5,
+      7,
+      11,
+      13,
+      17,
+      19,
+      23,
+      29,
+      31,
+      37,
+      41,
+      43,
+      47,
+      53,
+      59,
+      61,
+      67,
+      71,
+      73,
+      79,
+      83,
+      89,
+      97
+    ],
+    "parameters": [
+      "k=p-1",
+      "k=p"
+    ],
+    "cases": 46
+  },
+  "scope": "Finite coefficient comparisons and exact counterexamples; universal identities have written proofs in note.tex."
+}

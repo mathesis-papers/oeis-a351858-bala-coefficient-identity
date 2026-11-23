@@ -1,0 +1,40 @@
+{
+  "generated_paths": [
+    "CHANGELOG.md",
+    "CITATION.cff",
+    "CONTRIBUTING.md",
+    "LICENSES/CC-BY-4.0.txt",
+    "README.md",
+    "formalization/nodes.json",
+    "manuscript/bala-coefficient-identity/README.md",
+    "manuscript/bala-coefficient-identity/metadata.json",
+    "manuscript/bala-coefficient-identity/note.tex",
+    "manuscript/bala-coefficient-identity/reference-values.json",
+    "manuscript/bala-coefficient-identity/source-manifest.json",
+    "manuscript/bala-coefficient-identity/verification.json",
+    "manuscript/bala-coefficient-identity/verify.py",
+    "paper.json",
+    "paper.pdf",
+    "source.archive"
+  ],
+  "generator_version": "0.1.0",
+  "sha256": {
+    "CHANGELOG.md": "555f930e32c3dc07ac5678e6fa4a8e505225e8f0eab0b207a8ff3c22fea10481",
+    "CITATION.cff": "80d76cb4fba1724fb6a44a922d7409e5e92dfc24584ce5895de5795ef26334f3",
+    "CONTRIBUTING.md": "fafd66e63160b2a88f433af56d2af2b0f7bf6ed2fd417d46b54446ce07c627ff",
+    "LICENSES/CC-BY-4.0.txt": "58230517b7895aa219ff46a6ed63e67057a1582fb9ea054b16728a8c13525650",
+    "README.md": "9b1240715f45ee5d3606d66529f324737b989b63826da743859069d8b452fe5c",
+    "formalization/nodes.json": "e2cf03153e441019a7fe6763207601f5227070c6cbdcba5814eff6c3b0f8384e",
+    "manuscript/bala-coefficient-identity/README.md": "8dafa2eca82452664b7f10dd3e4a10062a58165ca15e6b3df4defb3fa7a08e46",
+    "manuscript/bala-coefficient-identity/metadata.json": "67e6f85822da38feb804cc5d84c78199fb3a9397e5d6651b8b4bf73b6694d893",
+    "manuscript/bala-coefficient-identity/note.tex": "8cb9949af441b95a96d512cab04771de93d16f4ae83f631800da7de649be2647",
+    "manuscript/bala-coefficient-identity/reference-values.json": "bb46b3fdb35ff4d5fd13fac5cf71b9b52c5077c16cbc24b2ae9c603765081e22",
+    "manuscript/bala-coefficient-identity/source-manifest.json": "b5e144936a36feec1b7545a813d95b1229a50a88c60adace325831be4c0c330e",
+    "manuscript/bala-coefficient-identity/verification.json": "c4995b1c2db5c117de702907218497abb471fb8740a5b04cb7bc72413fd8ba40",
+    "manuscript/bala-coefficient-identity/verify.py": "76928776a918b38da80485253b7b827abf56d93acd4b28868d00366382424ba4",
+    "paper.json": "724ca86853b1d83f75b816ff7eaa08ae520eba70eb355f82d6943c43e0eedfc0",
+    "paper.pdf": "4592e160ac2f9e0718fc30f09b89731c58b99f771212f90a9adac632da4b4434",
+    "source.archive": "0e0fd1b177741cb10d1d872afed14f28a0c5c43ba3f5a72de9296686b0cc5ea0"
+  },
+  "snapshot_identity": "1c5dc0e3277932d08a69c53876ee429be4f5ba0e316efef2d988f6dd0357e116"
+}

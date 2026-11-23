@@ -1,0 +1,386 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=0.9in]{geometry}
+\usepackage{booktabs,array,longtable}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\coeff}[2]{[x^{#1}]\,#2}
+\title{Positive expansions for Bala's trinomial coefficient conjecture\
+and alternative proofs of the Bajaj--Burns obstructions}
+\author{Haobo Ma\\\small ChronoAI Pte Ltd, Singapore
+\and Wenlin Zhang\\\small National University of Singapore\\\small ChronoAI Pte Ltd, Singapore}
+\date{15 November 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+A finite binomial expansion proves Peter Bala's finite-sum conjecture
+(OEIS A351858, FORMULA, revision 2, 27 February 2022; retained in revision 31,
+28 October 2025), extends to his rational-function family, and gives alternative
+proofs of the family obstructions of Ravi Bajaj and Alexander Burns
+(12 August 2026, Sections 2--3).
+We obtain a two-parameter coefficient identity and a positive finite formula
+for every member of the family, including A351859. We also derive the two
+entries' alternating sums, reversion formulas, algebraicity and ordinary Gauss
+congruences. The two infinite counterexample families have exact valuation
+two, distinguishing these ordinary congruences from the proposed cubic ones.
+\end{abstract}
+
+\section{A positive coefficient expansion}
+All series are formal. For $H\in\mathbb Q[[x]]$, $[x^n]H$ denotes the
+coefficient of $x^n$. A series with constant term one has a multiplicative
+inverse. Thus negative integer powers used below are well defined.
+For nonnegative integers $a$, $\binom ab=0$ if $b<0$ or $b>a$.
+
+Peter Bala defines
+\[
+ a(n)=[x^n]\frac{(1+x+x^2)^{3n}}{(1+x)^{2n}},\qquad n\geq0,
+\]
+and records the conjecture
+$a(n)=\sum_{j=0}^{\lfloor n/2\rfloor}\binom{3n}{j}\binom{n-j}{j}$
+\cite[FORMULA]{bala2}. The following identity proves it by allowing the
+numerator exponent to vary independently of the coefficient index.
+The alternating formulas already in Bala's entries arise from expanding
+different factors; Section~\ref{sec:siblings} relates them explicitly.
+The separate congruence results of Bajaj and Burns
+\cite{bbfirst,bb} concern the same family, but not this coefficient identity.
+
+\begin{theorem}\label{thm:main}
+For all nonnegative integers $m,n$,
+\begin{equation}\label{eq:main}
+ [x^n](1+x+x^2)^m(1+x)^{n-m}
+ =\sum_{j=0}^{\lfloor n/2\rfloor}\binom mj\binom{n-j}{j}.
+\end{equation}
+\end{theorem}
+\begin{proof}
+Use $1+x+x^2=(1+x)(1+x^2/(1+x))$ to obtain
+\begin{equation}\label{eq:expand}
+ (1+x+x^2)^m(1+x)^{n-m}
+ =\sum_{j=0}^{m}\binom mj x^{2j}(1+x)^{n-j}.
+\end{equation}
+If $2j>n$, the coefficient of $x^n$ in that summand is zero, even when
+$n-j<0$, since $(1+x)^{n-j}$ has no negative degrees. Otherwise $n-j\geq0$
+and $[x^{n-2j}](1+x)^{n-j}=\binom{n-j}{j}$.
+Our binomial convention extends the sum beyond $m$ when necessary.
+For $n=0$, both sides equal one.
+\end{proof}
+
+\begin{corollary}\label{cor:bala}
+Bala's finite-sum conjecture holds for every $n\geq0$:
+\[
+ a(n)=\sum_{j=0}^{\lfloor n/2\rfloor}\binom{3n}{j}\binom{n-j}{j}.
+\]
+In particular, $a(n)$ is a positive integer, and its first six terms are
+$1,1,7,19,103,376$.
+\end{corollary}
+\begin{proof}
+Set $m=3n$ in Theorem~\ref{thm:main}. All summands are nonnegative and the
+$j=0$ summand equals one. Substitution gives the displayed terms.
+\end{proof}
+
+For $k\geq1$, put $S_{k-1}(x)=1+x+\cdots+x^{k-1}$ and
+\[
+ G_k(x)=\frac{S_k(x)^{k+1}}{S_{k-1}(x)^k},\qquad
+ u_k(n)=[x^n]G_k(x)^n\quad(n\geq0).
+\]
+Thus $u_2=a$, and $u_3$ is A351859 \cite{bala3}.
+
+\begin{corollary}\label{cor:family}
+For every $k\geq1$ and $n\geq0$,
+\begin{equation}\label{eq:family}
+ u_k(n)=\sum_{j=0}^{\lfloor n/k\rfloor}\binom{(k+1)n}{j}
+ [x^{n-kj}]S_{k-1}(x)^{n-j}.
+\end{equation}
+Every $u_k(n)$ is a positive integer. In particular,
+$u_1(n)=\binom{2n}{n}$ and
+\[
+ u_3(n)=\sum_{j=0}^{\lfloor n/3\rfloor}\binom{4n}{j}
+ [x^{n-3j}](1+x+x^2)^{n-j}.
+\]
+\end{corollary}
+\begin{proof}
+The identity $S_k=S_{k-1}+x^k$ gives
+\[
+ G_k(x)^n=\sum_{j=0}^{(k+1)n}\binom{(k+1)n}{j}
+ x^{kj}S_{k-1}(x)^{n-j}.
+\]
+Terms with $kj>n$ cannot contribute. For every other term,
+$j\leq n/k\leq n$, so its remaining factor is a polynomial with
+nonnegative integer coefficients. If $k\geq2$, the $j=0$ term is positive:
+choosing $x$ from each factor of $S_{k-1}^n$ contributes one. For $k=1$,
+$S_0=1$ and only $j=n$ contributes, giving $\binom{2n}{n}$. This also
+handles $n=0$.
+\end{proof}
+
+The cubic formula is entirely explicit: for $0\leq d\leq2N$,
+\[
+ [x^d](1+x+x^2)^N
+ =\sum_{h=\max(0,d-N)}^{\lfloor d/2\rfloor}
+ \frac{N!}{h!(d-2h)!(N-d+h)!}.
+\]
+Here $h$ factors contribute $x^2$, $d-2h$ contribute $x$, and the rest
+contribute one. Outside this range the coefficient is zero.
+
+\section{Other formulas in the two entries}\label{sec:siblings}
+The following corollaries supply direct proofs of formulas already recorded
+in A351858 and A351859. Their attribution remains with the source entries.
+
+\begin{corollary}\label{cor:alternating}
+For $n\geq1$, the alternating sums in the two entries are
+\begin{align}
+ u_2(n)&=\sum_{h=0}^{n}\sum_{j=0}^{n-h}
+ (-1)^{n-h-j}\binom nh\binom{3n}{j}
+ \binom{4n-2j-h-1}{n-h-j},\label{eq:double}\\
+ u_3(n)&=\sum_{i=0}^{n}\sum_{j=0}^{n}\sum_{h=0}^{j}
+ (-1)^j\binom{4n}{n-2i-j-h}\binom{4n}{i}
+ \binom{3n+j-1}{j}\binom jh.\label{eq:triple}
+\end{align}
+At $n=0$, both sequences have value one.
+\end{corollary}
+\begin{proof}
+For \eqref{eq:double}, write
+\[
+ G_2(x)^n=(1+x)^n\bigl(1+x(1+x)\bigr)^{3n}(1+x)^{-3n}.
+\]
+Choose degrees $h$ and $j$ in the first two binomial expansions.
+The remaining factor is $(1+x)^{j-3n}$, whose degree $n-h-j$
+coefficient is
+$(-1)^{n-h-j}\binom{4n-2j-h-1}{n-h-j}$.
+For \eqref{eq:triple}, use
+\[
+ G_3(x)^n=(1+x)^{4n}(1+x^2)^{4n}
+ \sum_{j\geq0}(-1)^j\binom{3n+j-1}{j}x^j(1+x)^j.
+\]
+Expanding the second factor at degree $2i$ and the last at degree $h$
+leaves degree $n-2i-j-h$ in $(1+x)^{4n}$. Terms with $i>n$ or $j>n$
+cannot contribute. This proves the stated finite ranges.
+\end{proof}
+
+\begin{corollary}\label{cor:reversion}
+Let $T_k(x)$ be the compositional inverse of $x/G_k(x)$, let
+$F_k(x)=T_k(x)/x$, and set $A_k(x)=\sum_{n\geq0}u_k(n)x^n$.
+Then
+\begin{equation}\label{eq:reversion}
+ A_k=1+x\frac{F_k'}{F_k},\qquad
+ F_k S_{k-1}(xF_k)^k=S_k(xF_k)^{k+1}.
+\end{equation}
+Thus $A_k$ is algebraic over $\mathbb Q(x)$, and
+\[
+ A_k(z)=\operatorname{Diag}\frac{1}{1-tG_k(x)}
+ :=\sum_{n\geq0}[x^nt^n]\frac{z^n}{1-tG_k(x)}.
+\]
+These statements include the reversion and diagonal formulas in both entries.
+\end{corollary}
+\begin{proof}
+More generally let $\phi\in1+x\mathbb Q[[x]]$, let $T=x\phi(T)$ and
+$F=T/x=\phi(T)$. Write $\operatorname{Res}_t$ for the coefficient of
+$t^{-1}$ in a Laurent series multiplied by $dt$.
+For $n\geq1$, integration by parts and the substitution $x=t/\phi(t)$ give
+\begin{align*}
+ [x^n]\log F
+ &=\frac1n\operatorname{Res}_x x^{-n}\,d\log F\\
+ &=\frac1n\operatorname{Res}_t
+ \frac{\phi(t)^{n-1}\phi'(t)}{t^n}\,dt
+ =\frac1n[t^n]\phi(t)^n.
+\end{align*}
+In the last step use $(\phi^n)'=n\phi^{n-1}\phi'$.
+Formal residues are unchanged by a substitution with nonzero linear term:
+this follows for monomials from the residue of a derivative being zero,
+and for $t^{-1}dt$ from the logarithmic derivative having residue one.
+Differentiating the coefficient identity proves the first equation in
+\eqref{eq:reversion}. For $\phi=G_k$, the equation $F_k=G_k(xF_k)$
+gives the second. It is a nonzero polynomial equation (at $x=0$ it is
+$F_k-1=0$). Hence $F_k$, its derivative, and $A_k$ are algebraic in
+characteristic zero. Finally, expand $(1-tG_k(x))^{-1}=\sum_{n\geq0}t^nG_k(x)^n$
+to obtain the diagonal identity.
+\end{proof}
+
+\begin{corollary}\label{cor:gauss}
+Let $H\in1+x\mathbb Z[[x]]$, let $c\geq1$ be an integer and put
+$v(n)=[x^{cn}]H(x)^n$. For every prime $p$ and integers $n,r\geq1$,
+\[
+ v(np^r)\equiv v(np^{r-1})\pmod{p^r}.
+\]
+In particular this holds for
+$v(n)=[x^{cn}]G_k(x)^{sn}$ for all $k,c\geq1$ and $s\in\mathbb Z$.
+\end{corollary}
+\begin{proof}
+Coefficientwise Frobenius gives $H(x)^p\equiv H(x^p)\pmod p$.
+If $U\equiv V\pmod{p^e}$ with $e\geq1$, the binomial expansion gives
+$U^p\equiv V^p\pmod{p^{e+1}}$: the linear term has the required factor,
+the intermediate binomial coefficients are divisible by $p$, and
+$ep\geq e+1$ for the final term.
+Iteration and then taking an $n$th power yield
+$H(x)^{np^r}\equiv H(x^p)^{np^{r-1}}\pmod{p^r}$.
+Extract degree $cnp^r$. Finally $G_k^s$ has integer coefficients for
+every integer $s$, since $S_{k-1}$ and $S_k$ are integral units.
+\end{proof}
+
+\begin{corollary}\label{cor:criterion}
+For any integer sequence $(g(n))_{n\geq1}$, there is a unique
+$\phi\in1+x\mathbb Q[[x]]$ such that $g(n)=[x^n]\phi(x)^n$.
+This $\phi$ has integer coefficients if and only if $g$ satisfies the
+ordinary Gauss congruences for every prime and all positive indices.
+\end{corollary}
+\begin{proof}
+Set $F(x)=\exp(\sum_{n\geq1}g(n)x^n/n)$ and $T=xF$.
+The inverse of $T$ exists, and $\phi=F\circ T^{-1}$ satisfies $T=x\phi(T)$.
+The coefficient calculation in Corollary~\ref{cor:reversion} then gives
+$[x^n]\phi^n=n[x^n]\log F=g(n)$; it also proves uniqueness.
+If $\phi$ is integral, Corollary~\ref{cor:gauss} gives the congruences.
+
+Conversely assume those congruences and define
+$b_d=d^{-1}\sum_{e\mid d}\mu(d/e)g(e)$, where $\mu$ is the M\"obius
+function (zero on integers divisible by a prime square, and $(-1)^j$ on
+products of $j$ distinct primes).
+For $d=p^a m$ with $p\nmid m$, the numerator equals
+\[
+ \sum_{e\mid m}\mu(m/e)\bigl(g(ep^a)-g(ep^{a-1})\bigr),
+\]
+which is divisible by $p^a$. Doing this for every prime divisor of $d$
+shows $b_d\in\mathbb Z$. M\"obius inversion gives
+$\sum_{d\mid n}d b_d=g(n)$, so taking formal logarithms proves
+\[
+ F(x)=\prod_{d\geq1}(1-x^d)^{-b_d}\in1+x\mathbb Z[[x]].
+\]
+The product is well defined degree by degree. The inverse of $T=xF$
+has integer coefficients by recursive coefficient comparison. Therefore
+$\phi=F\circ T^{-1}$ is integral, as required.
+\end{proof}
+
+\section{The cubic-congruence obstruction}
+The COMMENTS of A351858 assert: ``Conjecture: for $k\geq2$, each sequence
+$u_k$ satisfies the same supercongruences as the central binomial
+coefficients.'' Explicitly, these are
+\begin{equation}\label{eq:cubic}
+ u_k(np^r)\equiv u_k(np^{r-1})\pmod{p^{3r}}
+ \quad(p\geq5\text{ prime};\ n,r\geq1).
+\end{equation}
+The following obstructions were given by Bajaj and Burns
+\cite[Sections 2--3]{bbfirst}; their subsequent version \cite{bb} adds
+a separate proof of the fixed $k=2$ cubic congruences in Sections 5--7.
+Here the positive expansion gives an alternative derivation of the obstructions.
+
+\begin{corollary}[Bajaj--Burns]\label{cor:obstruction}
+For every prime $p\geq5$,
+\[
+ u_{p-1}(p)=\binom{2p-1}{p}+p^2(p-2),\qquad
+ u_p(p)=\binom{2p-1}{p}+p^2.
+\]
+Since $u_{p-1}(1)=u_p(1)=1$, both differences from the index-one value
+have $p$-adic valuation exactly two. Thus \eqref{eq:cubic} fails for
+these parameter choices.
+\end{corollary}
+\begin{proof}
+For $k=p-1$, \eqref{eq:family} has terms $j=0,1$. The first counts
+weak compositions of $p$ into $p$ parts with each part at most $p-2$:
+\[
+ [x^p]S_{p-2}(x)^p=\binom{2p-1}{p}-p^2.
+\]
+Indeed a specified part at least $p-1$ leaves one to distribute into
+$p$ parts, and two such large parts cannot occur. The second term is
+$p^2[x]S_{p-2}^{p-1}=p^2(p-1)$. For $k=p$, the first term is
+$\binom{2p-1}{p}-p$, while the second is $p(p+1)$.
+
+For completeness, the elementary Wolstenholme congruence needed here is
+$\binom{2p-1}{p}\equiv1\pmod{p^3}$. In the localization of $\mathbb Z$
+at $p$, put $H_i=\sum_{a=1}^{p-1}a^{-i}$.
+Inversion permutes the nonzero residues, so $H_2\equiv\sum_{a=1}^{p-1}a^2
+\equiv0\pmod p$ for $p\geq5$.
+Pairing $a$ and $p-a$ gives $2H_1\equiv-pH_2\equiv0\pmod{p^2}$.
+Consequently
+\[
+ \binom{2p-1}{p}=\prod_{a=1}^{p-1}(1+p/a)
+ \equiv1+pH_1+\frac{p^2}{2}(H_1^2-H_2)\equiv1\pmod{p^3}.
+\]
+The two differences are therefore congruent to $p^2(p-2)$ and $p^2$
+modulo $p^3$, respectively, with nonzero quotients modulo $p$.
+\end{proof}
+
+At $p=5$ this recovers $u_4(5)=201$ and $u_5(5)=151$, with differences
+$200$ and $150$. The fixed $k=2$ and $k=3$ statements are not contradicted:
+neither can equal $p-1$ or $p$ for $p\geq5$.
+The further coefficient-slope sentence in both OEIS entries says
+``may satisfy the same supercongruences.'' It does not assert a universal
+theorem. A universal reading across all $k,c,s$ fails at $c=s=1$, $k=4,5$;
+this is not a refutation of an assertion made in that sentence, nor does it
+decide the fixed $k=3$ suggestion in A351859.
+
+\section{Coverage and verification}
+\small
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.46\linewidth}>{\raggedright\arraybackslash}p{0.48\linewidth}@{}}
+\toprule
+Source item & Coverage\\
+\midrule
+\endhead
+A351858, FORMULA finite-sum conjecture & Proved, Corollary~\ref{cor:bala}; all $n\geq0$.\\
+A351858 COMMENTS family; A351859 NAME & Positive formula and integrality proved, Corollary~\ref{cor:family}; a generalization, not separately posed as a conjecture.\\
+Alternating sums, both FORMULA fields & Reproved; prior formulas Bala (2022), Corollary~\ref{cor:alternating}.\\
+Reversion and algebraicity, both FORMULA fields & Reproved; prior formulas Bala (2022), Corollary~\ref{cor:reversion}.\\
+Ordinary Gauss congruences, both COMMENTS fields & Reproved; prior statements Bala (2022), Corollary~\ref{cor:gauss}, also for all integral slopes.\\
+General rational-series existence and integral-coefficient criterion, A351858 COMMENTS & Reproved; prior statement Bala (2022), Corollary~\ref{cor:criterion}.\\
+All-$k$ cubic conjecture, A351858 COMMENTS & Refuted (explicit counterexamples); reproved, prior proof Bajaj--Burns (2026), Corollary~\ref{cor:obstruction}. No corrected cubic theorem is asserted here.\\
+Fixed $k=2$ cubic congruences & Prior proof cited: Bajaj--Burns (2026), Sections 5--7 of \cite{bb}; separate from our coefficient proof.\\
+Fixed $k=3$ cubic congruences, A351859 COMMENTS & Not covered by these proofs.\\
+Coefficient-slope ``may satisfy'' suggestions & A universal all-$k$ assertion is not asserted in the source; fails for $k=4,5$, $c=s=1$, $p=5$. The fixed $k=3$ suggestion is not covered.\\
+A351858 asymptotic formula (Kotesovec, 2022) & Not covered.\\
+Cross-referenced ordinary Gauss statements & Corollary~\ref{cor:gauss} applies to the coefficient representations in A000984, A103885, A333090, A333564, A333579, A333715, A351856, A351857 and A372211--A372213. These are prior statements, not new conjecture resolutions.\\
+Other cross-reference items & Cubic conjectures, recurrences and zero-location conjectures in those entries, and A333565's other formulas, are not covered.\\
+\bottomrule
+\end{longtable}
+\normalsize
+The cross-reference numbers in the table denote the corresponding
+\href{https://oeis.org}{OEIS} entries. For A333090 the integral series is
+$(1+x)S(x/(1+x))$, where $S$ is the large Schr\"oder series; for A333564
+it is the quotient of the Catalan series at $x$ and $-x$. Both are integral
+units. The remaining listed representations are rational integral units,
+with the slope and power specified by their NAME or FORMULA fields.
+The table does not assign a common status to their distinct cubic conjectures.
+
+The Lean declaration
+\begin{quote}\small
+\texttt{D5.S1.Recurrence.}\\
+\texttt{BalaTrinomialCoefficientIdentity.result}
+\end{quote}
+in the \href{https://github.com/the-omega-institute/trureturing/blob/4a7117cee792c7d5598d7f4770577d557fb45137/D5/S1/Recurrence/BalaTrinomialCoefficientIdentity.lean}{pinned Lean file}
+has exactly the statement of Corollary~\ref{cor:bala}, for every natural
+$n$, including zero. Its definition \texttt{source} is the rational quotient,
+formed independently of the sum; the natural-number sum is cast into
+$\mathbb Q$. The two-parameter identity, positive family expansion,
+other-formula corollaries and alternative obstruction proofs have the written
+proofs above. The accompanying \texttt{verify.py} supplies finite exact-integer
+coefficient comparisons, whose ranges and results are in \texttt{verification.json}.
+
+\paragraph{Availability and license.}
+The source package contains this \LaTeX{} source, an exact-integer checker,
+coefficient reference values, metadata and a rebuild guide.
+This note is licensed under Creative Commons Attribution 4.0 International
+(CC BY 4.0).
+
+\begin{thebibliography}{9}
+\bibitem{bala2}
+Peter Bala, \emph{A351858}, The On-Line Encyclopedia of Integer Sequences,
+submitted 27 February 2022; FORMULA conjecture added in revision 2;
+revision 31 (28 October 2025), NAME, COMMENTS and FORMULA.
+\url{https://oeis.org/A351858};
+\href{https://oeis.org/history?seq=A351858\&start=20}{original edit history}.
+
+\bibitem{bala3}
+Peter Bala, \emph{A351859}, The On-Line Encyclopedia of Integer Sequences,
+submitted 1 March 2022, revision 24 (30 May 2025), NAME, COMMENTS and FORMULA.
+\url{https://oeis.org/A351859}.
+
+\bibitem{bbfirst}
+Ravi Bajaj and Alexander Burns,
+\emph{An exact boundary for the A351858 cyclotomic family},
+12 August 2026, Sections 2--3,
+\href{https://github.com/rbajaj5/a183068-supercongruence/blob/524c02ec2a8da45b9fc7078e7de6f3a044360e82/related-results/A351858CyclotomicFamilyBoundary.md}{initial version}.
+
+\bibitem{bb}
+Ravi Bajaj and Alexander Burns,
+\emph{The A351858 cubic tower and its exact family boundary},
+12 August 2026, Sections 5--7,
+\href{https://github.com/rbajaj5/a183068-supercongruence/blob/dd9762d8cdf9718ecc09637dc470e87100677886/related-results/A351858CyclotomicFamilyBoundary.md}{subsequent version}.
+\end{thebibliography}
+\end{document}

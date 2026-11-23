@@ -1,0 +1,316 @@
+{
+  "nodes": [
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s1",
+      "contributor": null,
+      "identity": "collected:oeis-a351858-bala-coefficient-identity:2:s1",
+      "kind": "paper",
+      "label": "Theorem",
+      "lean_source": {
+        "revision": "4a7117cee792c7d5598d7f4770577d557fb45137",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/4a7117cee792c7d5598d7f4770577d557fb45137/D5/S1/Recurrence/BalaTrinomialCoefficientIdentity.lean"
+      },
+      "lineage": "collected:oeis-a351858-bala-coefficient-identity:s1",
+      "macros": {
+        "\\coeff": "[x^{#1}]\\,#2"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "oeis-a351858-bala-coefficient-identity",
+      "scope": "in_scope",
+      "statement": "For all nonnegative integers $m,n$,\n\\begin{equation}\n [x^n](1+x+x^2)^m(1+x)^{n-m}\n =\\sum_{j=0}^{\\lfloor n/2\\rfloor}\\binom mj\\binom{n-j}{j}.\n\\end{equation}",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Positive expansions for Bala's trinomial coefficient conjecture and alternative proofs of the Bajaj–Burns obstructions",
+      "toolchain": null,
+      "version": 2,
+      "work": "oeis-a351858-bala-coefficient-identity"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s2",
+      "contributor": null,
+      "identity": "collected:oeis-a351858-bala-coefficient-identity:2:s2",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "4a7117cee792c7d5598d7f4770577d557fb45137",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/4a7117cee792c7d5598d7f4770577d557fb45137/D5/S1/Recurrence/BalaTrinomialCoefficientIdentity.lean"
+      },
+      "lineage": "collected:oeis-a351858-bala-coefficient-identity:s2",
+      "macros": {
+        "\\coeff": "[x^{#1}]\\,#2"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "oeis-a351858-bala-coefficient-identity",
+      "scope": "in_scope",
+      "statement": "Bala's finite-sum conjecture holds for every $n\\geq0$:\n\\[\n a(n)=\\sum_{j=0}^{\\lfloor n/2\\rfloor}\\binom{3n}{j}\\binom{n-j}{j}.\n\\]\nIn particular, $a(n)$ is a positive integer, and its first six terms are\n$1,1,7,19,103,376$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Positive expansions for Bala's trinomial coefficient conjecture and alternative proofs of the Bajaj–Burns obstructions",
+      "toolchain": null,
+      "version": 2,
+      "work": "oeis-a351858-bala-coefficient-identity"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s3",
+      "contributor": null,
+      "identity": "collected:oeis-a351858-bala-coefficient-identity:2:s3",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "4a7117cee792c7d5598d7f4770577d557fb45137",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/4a7117cee792c7d5598d7f4770577d557fb45137/D5/S1/Recurrence/BalaTrinomialCoefficientIdentity.lean"
+      },
+      "lineage": "collected:oeis-a351858-bala-coefficient-identity:s3",
+      "macros": {
+        "\\coeff": "[x^{#1}]\\,#2"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "oeis-a351858-bala-coefficient-identity",
+      "scope": "in_scope",
+      "statement": "For every $k\\geq1$ and $n\\geq0$,\n\\begin{equation}\n u_k(n)=\\sum_{j=0}^{\\lfloor n/k\\rfloor}\\binom{(k+1)n}{j}\n [x^{n-kj}]S_{k-1}(x)^{n-j}.\n\\end{equation}\nEvery $u_k(n)$ is a positive integer. In particular,\n$u_1(n)=\\binom{2n}{n}$ and\n\\[\n u_3(n)=\\sum_{j=0}^{\\lfloor n/3\\rfloor}\\binom{4n}{j}\n [x^{n-3j}](1+x+x^2)^{n-j}.\n\\]",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Positive expansions for Bala's trinomial coefficient conjecture and alternative proofs of the Bajaj–Burns obstructions",
+      "toolchain": null,
+      "version": 2,
+      "work": "oeis-a351858-bala-coefficient-identity"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s4",
+      "contributor": null,
+      "identity": "collected:oeis-a351858-bala-coefficient-identity:2:s4",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "4a7117cee792c7d5598d7f4770577d557fb45137",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/4a7117cee792c7d5598d7f4770577d557fb45137/D5/S1/Recurrence/BalaTrinomialCoefficientIdentity.lean"
+      },
+      "lineage": "collected:oeis-a351858-bala-coefficient-identity:s4",
+      "macros": {
+        "\\coeff": "[x^{#1}]\\,#2"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "oeis-a351858-bala-coefficient-identity",
+      "scope": "in_scope",
+      "statement": "For $n\\geq1$, the alternating sums in the two entries are\n\\begin{align}\n u_2(n)&=\\sum_{h=0}^{n}\\sum_{j=0}^{n-h}\n (-1)^{n-h-j}\\binom nh\\binom{3n}{j}\n \\binom{4n-2j-h-1}{n-h-j},\\\\\n u_3(n)&=\\sum_{i=0}^{n}\\sum_{j=0}^{n}\\sum_{h=0}^{j}\n (-1)^j\\binom{4n}{n-2i-j-h}\\binom{4n}{i}\n \\binom{3n+j-1}{j}\\binom jh.\n\\end{align}\nAt $n=0$, both sequences have value one.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Positive expansions for Bala's trinomial coefficient conjecture and alternative proofs of the Bajaj–Burns obstructions",
+      "toolchain": null,
+      "version": 2,
+      "work": "oeis-a351858-bala-coefficient-identity"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s5",
+      "contributor": null,
+      "identity": "collected:oeis-a351858-bala-coefficient-identity:2:s5",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "4a7117cee792c7d5598d7f4770577d557fb45137",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/4a7117cee792c7d5598d7f4770577d557fb45137/D5/S1/Recurrence/BalaTrinomialCoefficientIdentity.lean"
+      },
+      "lineage": "collected:oeis-a351858-bala-coefficient-identity:s5",
+      "macros": {
+        "\\coeff": "[x^{#1}]\\,#2"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "oeis-a351858-bala-coefficient-identity",
+      "scope": "in_scope",
+      "statement": "Let $T_k(x)$ be the compositional inverse of $x/G_k(x)$, let\n$F_k(x)=T_k(x)/x$, and set $A_k(x)=\\sum_{n\\geq0}u_k(n)x^n$.\nThen\n\\begin{equation}\n A_k=1+x\\frac{F_k'}{F_k},\\qquad\n F_k S_{k-1}(xF_k)^k=S_k(xF_k)^{k+1}.\n\\end{equation}\nThus $A_k$ is algebraic over $\\mathbb Q(x)$, and\n\\[\n A_k(z)=\\operatorname{Diag}\\frac{1}{1-tG_k(x)}\n :=\\sum_{n\\geq0}[x^nt^n]\\frac{z^n}{1-tG_k(x)}.\n\\]\nThese statements include the reversion and diagonal formulas in both entries.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Positive expansions for Bala's trinomial coefficient conjecture and alternative proofs of the Bajaj–Burns obstructions",
+      "toolchain": null,
+      "version": 2,
+      "work": "oeis-a351858-bala-coefficient-identity"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s6",
+      "contributor": null,
+      "identity": "collected:oeis-a351858-bala-coefficient-identity:2:s6",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "4a7117cee792c7d5598d7f4770577d557fb45137",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/4a7117cee792c7d5598d7f4770577d557fb45137/D5/S1/Recurrence/BalaTrinomialCoefficientIdentity.lean"
+      },
+      "lineage": "collected:oeis-a351858-bala-coefficient-identity:s6",
+      "macros": {
+        "\\coeff": "[x^{#1}]\\,#2"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "oeis-a351858-bala-coefficient-identity",
+      "scope": "in_scope",
+      "statement": "Let $H\\in1+x\\mathbb Z[[x]]$, let $c\\geq1$ be an integer and put\n$v(n)=[x^{cn}]H(x)^n$. For every prime $p$ and integers $n,r\\geq1$,\n\\[\n v(np^r)\\equiv v(np^{r-1})\\pmod{p^r}.\n\\]\nIn particular this holds for\n$v(n)=[x^{cn}]G_k(x)^{sn}$ for all $k,c\\geq1$ and $s\\in\\mathbb Z$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Positive expansions for Bala's trinomial coefficient conjecture and alternative proofs of the Bajaj–Burns obstructions",
+      "toolchain": null,
+      "version": 2,
+      "work": "oeis-a351858-bala-coefficient-identity"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s7",
+      "contributor": null,
+      "identity": "collected:oeis-a351858-bala-coefficient-identity:2:s7",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "4a7117cee792c7d5598d7f4770577d557fb45137",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/4a7117cee792c7d5598d7f4770577d557fb45137/D5/S1/Recurrence/BalaTrinomialCoefficientIdentity.lean"
+      },
+      "lineage": "collected:oeis-a351858-bala-coefficient-identity:s7",
+      "macros": {
+        "\\coeff": "[x^{#1}]\\,#2"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "oeis-a351858-bala-coefficient-identity",
+      "scope": "in_scope",
+      "statement": "For any integer sequence $(g(n))_{n\\geq1}$, there is a unique\n$\\phi\\in1+x\\mathbb Q[[x]]$ such that $g(n)=[x^n]\\phi(x)^n$.\nThis $\\phi$ has integer coefficients if and only if $g$ satisfies the\nordinary Gauss congruences for every prime and all positive indices.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Positive expansions for Bala's trinomial coefficient conjecture and alternative proofs of the Bajaj–Burns obstructions",
+      "toolchain": null,
+      "version": 2,
+      "work": "oeis-a351858-bala-coefficient-identity"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s8",
+      "contributor": null,
+      "identity": "collected:oeis-a351858-bala-coefficient-identity:2:s8",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "4a7117cee792c7d5598d7f4770577d557fb45137",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/4a7117cee792c7d5598d7f4770577d557fb45137/D5/S1/Recurrence/BalaTrinomialCoefficientIdentity.lean"
+      },
+      "lineage": "collected:oeis-a351858-bala-coefficient-identity:s8",
+      "macros": {
+        "\\coeff": "[x^{#1}]\\,#2"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "oeis-a351858-bala-coefficient-identity",
+      "scope": "in_scope",
+      "statement": "For every prime $p\\geq5$,\n\\[\n u_{p-1}(p)=\\binom{2p-1}{p}+p^2(p-2),\\qquad\n u_p(p)=\\binom{2p-1}{p}+p^2.\n\\]\nSince $u_{p-1}(1)=u_p(1)=1$, both differences from the index-one value\nhave $p$-adic valuation exactly two. Thus \\eqref{eq:cubic} fails for\nthese parameter choices.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Positive expansions for Bala's trinomial coefficient conjecture and alternative proofs of the Bajaj–Burns obstructions",
+      "toolchain": null,
+      "version": 2,
+      "work": "oeis-a351858-bala-coefficient-identity"
+    }
+  ]
+}

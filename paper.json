@@ -1,0 +1,66 @@
+{
+  "files": {
+    "pdf": {
+      "bytes": 83931,
+      "matches_public": true,
+      "path": "paper.pdf",
+      "public_sha256": "4592e160ac2f9e0718fc30f09b89731c58b99f771212f90a9adac632da4b4434",
+      "sha256": "4592e160ac2f9e0718fc30f09b89731c58b99f771212f90a9adac632da4b4434"
+    },
+    "source": {
+      "bytes": 16520,
+      "matches_public": true,
+      "path": "source.archive",
+      "public_sha256": "0e0fd1b177741cb10d1d872afed14f28a0c5c43ba3f5a72de9296686b0cc5ea0",
+      "sha256": "0e0fd1b177741cb10d1d872afed14f28a0c5c43ba3f5a72de9296686b0cc5ea0"
+    }
+  },
+  "source_identity": "Mathesis public projection",
+  "work": {
+    "abstract_text": "A finite binomial expansion proves Peter Bala's finite-sum conjecture (OEIS A351858, FORMULA, revision 2, 27 February 2022; retained in revision 31, 28 October 2025), extends to his rational-function family, and gives alternative proofs of the family obstructions of Ravi Bajaj and Alexander Burns (12 August 2026, Sections 2–3). We obtain a two-parameter coefficient identity and a positive finite formula for every member of the family, including A351859. We also derive the two entries' alternating sums, reversion formulas, algebraicity and ordinary Gauss congruences. The two infinite counterexample families have exact valuation two, distinguishing these ordinary congruences from the proposed cubic ones.",
+    "authors": [
+      {
+        "affiliation": "ChronoAI Pte Ltd, Singapore",
+        "name": "Haobo Ma"
+      },
+      {
+        "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+        "name": "Wenlin Zhang"
+      }
+    ],
+    "concept_doi": null,
+    "current_version": 2,
+    "doi": null,
+    "lean_source": {
+      "revision": "4a7117cee792c7d5598d7f4770577d557fb45137",
+      "url": "https://github.com/the-omega-institute/trureturing/blob/4a7117cee792c7d5598d7f4770577d557fb45137/D5/S1/Recurrence/BalaTrinomialCoefficientIdentity.lean"
+    },
+    "license": "CC-BY-4.0",
+    "msc": [],
+    "pdf": {
+      "bytes": 83931,
+      "sha256": "4592e160ac2f9e0718fc30f09b89731c58b99f771212f90a9adac632da4b4434",
+      "url": "/api/v1/collected-papers/oeis-a351858-bala-coefficient-identity/files/pdf?version=2"
+    },
+    "previous_version": null,
+    "publication": "public",
+    "published_on": "2026-11-23T16:36:25.656240967Z",
+    "record": "oeis-a351858-bala-coefficient-identity",
+    "repository_name": "oeis-a351858-bala-coefficient-identity",
+    "source": {
+      "bytes": 16520,
+      "sha256": "0e0fd1b177741cb10d1d872afed14f28a0c5c43ba3f5a72de9296686b0cc5ea0",
+      "url": "/api/v1/collected-papers/oeis-a351858-bala-coefficient-identity/files/source?version=2"
+    },
+    "title": "Positive expansions for Bala's trinomial coefficient conjecture and alternative proofs of the Bajaj–Burns obstructions",
+    "versions": [
+      {
+        "previous_version": null,
+        "published_on": "2026-11-23T16:36:25.656240967Z",
+        "revision": "2",
+        "version": 2
+      }
+    ],
+    "work": "oeis-a351858-bala-coefficient-identity"
+  }
+}
