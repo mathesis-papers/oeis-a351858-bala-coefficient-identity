@@ -28,9 +28,9 @@
         "name": "Wenlin Zhang"
       }
     ],
-    "concept_doi": null,
+    "concept_doi": "10.5281/zenodo.24413797",
     "current_version": 2,
-    "doi": null,
+    "doi": "10.5281/zenodo.24413798",
     "lean_source": {
       "revision": "4a7117cee792c7d5598d7f4770577d557fb45137",
       "url": "https://github.com/the-omega-institute/trureturing/blob/4a7117cee792c7d5598d7f4770577d557fb45137/D5/S1/Recurrence/BalaTrinomialCoefficientIdentity.lean"

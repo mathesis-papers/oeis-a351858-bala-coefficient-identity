@@ -5,13 +5,15 @@
 A finite binomial expansion proves Peter Bala's finite-sum conjecture (OEIS A351858, FORMULA, revision 2, 27 February 2022; retained in revision 31, 28 October 2025), extends to his rational-function family, and gives alternative proofs of the family obstructions of Ravi Bajaj and Alexander Burns (12 August 2026, Sections 2–3). We obtain a two-parameter coefficient identity and a positive finite formula for every member of the family, including A351859. We also derive the two entries' alternating sums, reversion formulas, algebraicity and ordinary Gauss congruences. The two infinite counterexample families have exact valuation two, distinguishing these ordinary congruences from the proposed cubic ones.
 
 - PDF: [frozen public file](paper.pdf)
+- DOI: [https://doi.org/10.5281/zenodo.24413798](https://doi.org/10.5281/zenodo.24413798)
+- Concept DOI: [https://doi.org/10.5281/zenodo.24413797](https://doi.org/10.5281/zenodo.24413797)
 - License: CC-BY-4.0
 - Version: 2
 - Mathesis record: [oeis-a351858-bala-coefficient-identity](https://mathesis-omega-research.apps.chrono-ai.fun/papers/oeis-a351858-bala-coefficient-identity?version=2)
 
 ## How to cite
 
-Haobo Ma, Wenlin Zhang (2026). Positive expansions for Bala's trinomial coefficient conjecture and alternative proofs of the Bajaj–Burns obstructions. Mathesis, version 2. https://mathesis-omega-research.apps.chrono-ai.fun/papers/oeis-a351858-bala-coefficient-identity?version=2
+Haobo Ma, Wenlin Zhang (2026). Positive expansions for Bala's trinomial coefficient conjecture and alternative proofs of the Bajaj–Burns obstructions. Mathesis, version 2. https://doi.org/10.5281/zenodo.24413798
 
 ## Statement progress
 
