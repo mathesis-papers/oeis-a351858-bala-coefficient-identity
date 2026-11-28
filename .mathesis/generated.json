@@ -32,9 +32,9 @@
     "manuscript/bala-coefficient-identity/source-manifest.json": "b5e144936a36feec1b7545a813d95b1229a50a88c60adace325831be4c0c330e",
     "manuscript/bala-coefficient-identity/verification.json": "c4995b1c2db5c117de702907218497abb471fb8740a5b04cb7bc72413fd8ba40",
     "manuscript/bala-coefficient-identity/verify.py": "76928776a918b38da80485253b7b827abf56d93acd4b28868d00366382424ba4",
-    "paper.json": "11342b1e39b939ac2193b67aa73fc2d1ed0bfc28a6da251cc5693c3f071434cf",
+    "paper.json": "b92f51bb47278a2082e6324f0cf7be16e638de664b49c6a05fcd1eda7128269d",
     "paper.pdf": "4592e160ac2f9e0718fc30f09b89731c58b99f771212f90a9adac632da4b4434",
     "source.archive": "0e0fd1b177741cb10d1d872afed14f28a0c5c43ba3f5a72de9296686b0cc5ea0"
   },
-  "snapshot_identity": "304f63c49f0fa4b06c7f48693654c549bfdddde55aaa4c4812575eba77d23fed"
+  "snapshot_identity": "95cf2b8dddecc3667c042a5394ba7f6841a18c8114f3988cd7b335fd1072e785"
 }
